@@ -16,7 +16,7 @@ router.post("/user/signup", (req, res) => {
 
 });
 
-// création d'un user
+// listing d'un user
 router.get("/users", (req, res) => {
     let result_promise = models.listUsers(req.body);
     return result_promise.then(result => res.send(result))
