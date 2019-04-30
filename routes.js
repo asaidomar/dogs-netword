@@ -12,7 +12,8 @@ router.get("/", (req, res) => {res.send("Hello")});
 // création d'un user
 router.post("/user/signup", (req, res) => {
     let result = models.createUser(req.body);
-    res.send('User created')
+    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+
 
 });
 
