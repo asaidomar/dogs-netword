@@ -181,7 +181,7 @@ function updateComment(comment_id, data) {
 
 }
 
-
+// on evite de doublon
 module.exports = {
     getUser,
     createUser,
@@ -203,3 +203,6 @@ module.exports = {
     deleteComment,
     updateComment
 };
+
+
+module.exports;
