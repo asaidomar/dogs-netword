@@ -9,7 +9,9 @@ const router = express.Router();
 
 router.get("/", (req, res) => {res.send("Hello")});
 
-// création d'un user
+
+/************************************* Section user  **********************************************/
+// creation
 router.post("/user/signup", (req, res) => {
     let result = models.createUser(req.body);
     result.then(result => res.send("User inserted")).catch(error => res.end(error))
@@ -17,12 +19,129 @@ router.post("/user/signup", (req, res) => {
 
 });
 
-// listing d'un user
+// listing
 router.get("/users", (req, res) => {
     let result_promise = models.listUsers(req.body);
     return result_promise.then(result => res.send(result))
 
 });
+
+//get
+router.get("/user/:userid", (req, res) => {
+    let results = models.getUser(req.params.userid);
+    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+
+});
+
+// mise à jour
+router.put("/user/:userid", (req, res) => {
+    let results = models.updateUser(req.params.userid, req.body);
+    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+
+});
+// suppression
+router.delete("/user/:userid", (req, res) => {
+    let results = models.deleteUser(req.params.userid);
+    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+
+});
+
+
+router.post("/user/login", (req, res) => {
+    let result = models.login(req.body);
+    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+
+});
+
+router.delete("/user/logout", (req, res) => {
+   res.send('logout')
+
+});
+
+
+
+/************************************* Section publication  ****************************************/
+
+// creation
+router.post("/user/:userid/publications", (req, res) => {
+    let data = req.body;
+    data.user_id = res.params.userid;
+    let results = models.createPublication(data);
+    results.then(results => res.send(results));
+
+});
+
+// get users publication
+router.get("/user/:userid/publications", (req, res) => {
+    let results = models.getUserPublications(req.params.userid);
+    result.then(results => res.send(results));
+
+});
+
+// get publication
+router.get("/publication/:publicationid", (req, res) => {
+    let results = models.getPublication(data);
+    results.then(results => res.send(results));
+
+});
+
+//mise à jour
+router.put("/publication/:publicationid", (req, res) => {
+    let data = req.body;
+    data.user_id = res.params.userid;
+    let results = models.updatePublication(data);
+    results.then(results => res.send(results));
+
+});
+
+//mise à jour
+router.put("/publication/:publicationid/media", (req, res) => {
+    let data = req.body;
+    data.user_id = res.params.publicationid;
+    let results = models.addPublicationMedia(res.params.publicationid, data);
+    results.then(results => res.send(results));
+
+});
+
+// delete
+router.delete("/publication/:publicationid", (req, res) => {
+    let results = models.deletePublication(res.params.publicationid);
+    results.then(results => res.send(results));
+});
+
+/************************************* Section comment  ****************************************/
+// creation
+router.post("/publication/:publicationid/comments", (req, res) => {
+    return models.createComment(req.body).then((result) => res.send(result)).catch(error => res.send(error))
+});
+
+// ajout de media
+router.post("/publication/:publicationid/comments/media", (req, res) => {
+    return models.createMediaComment(req.body).then((result) => res.send(result)).catch(error => res.send(error))
+});
+
+// list des commentaires
+router.get("/publication/:publicationid/comments", (req, res) => {
+    return models.getPublicationComments(req.body).then((result) => res.send(result)).catch(error => res.send(error))
+});
+
+// get
+router.get("/comment/:commentid", (req, res) => {
+    return models.getComment(req.params.commentid).then((result) => res.send(result)).catch(error => res.send(error))
+});
+
+
+router.delete("/comment/:commentid", (req, res) => {
+    return models.getComment(req.params.commentid).then((result) => res.send(result)).catch(error => res.send(error))
+});
+
+router.put("/comment/:commentid", (req, res) => {
+    return models.getComment(req.params.commentid, req.body).then((result) => res.send(result)).catch(error => res.send(error))
+});
+
+
+
+
 
 
 module.exports = router;

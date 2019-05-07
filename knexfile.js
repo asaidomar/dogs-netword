@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-      database: 'NODE_APP',
+      database: 'DOGS',
       user:     'root',
       password: 'root',
       port: 8889

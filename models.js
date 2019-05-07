@@ -47,11 +47,28 @@ function createUser(data) {
 
 
 function createPublication(data){
-
+    return knex("Publication").insert(data)
 }
 
 
 function createComment(data){
+    return knex("Comment").insert(data)
+
+}
+
+
+function getUserPublications(user_id){
+    return knex("Publication").select("*").where({user_id:user_id})
+}
+
+
+function getPublication(publication_id){
+    return knex("Publication").select("*").where({publication_id:publication_id})
+}
+
+
+function listComments(pub_id){
+    return knex("Comment").select("*").where({pub_id:pub_id})
 
 }
 
@@ -60,8 +77,17 @@ function listUsers(data){
     return knex("User").where(data)
 }
 
+
+
 module.exports = {
     getUser,
     createUser,
-    listUsers
+    listUsers,
+    createPublication,
+    createComment,
+    listPubs,
+    listComments,
+    getPublication
+
+
 };
