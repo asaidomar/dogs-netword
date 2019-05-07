@@ -14,7 +14,7 @@ app.use(bodyParser.json({limit: '10mb', extended: true}));
 app.use(bodyParser.urlencoded({limit: '10mb', extended: true}));
 
 //setting middleware
-app.use(express.static(__dirname + 'public')); //Serves resources from public folder
+app.use(express.static(__dirname + '/public')); //Serves resources from public folder
 
 app.use("/api", router);
 

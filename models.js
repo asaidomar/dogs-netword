@@ -47,7 +47,7 @@ function createUser(data) {
     };
     return knex('users').insert(user_data).then(result => {
         if (result) {
-            return knex('users').where({email: data.email})
+            return knex('users').where({email: data.email}).limit(1);
         } else {
             throw Error("User not inserted")
         }
@@ -60,7 +60,7 @@ function createPublication(data) {
             if (results) {
                 return data
             } else {
-                throw Error("User not inserted")
+                throw Error("Publication not inserted")
             }
         }
     )
@@ -132,8 +132,8 @@ function updateUser(userid, data) {
 
 function addPublicationMedia(publication_id, data) {
     let buff = new Buffer(data.content_b64, 'base64');
-    let path = `/Users/alisaidomar/PycharmProjects/dogs/public/images/${publication_id}${randomString()}.png`;
     let pathname = `/public/images/${publication_id}${randomString()}.png`;
+    let path = `/Users/alisaidomar/PycharmProjects/dogs${pathname}`;
     fs.writeFileSync(path, buff);
 
     delete data.content_b64;
