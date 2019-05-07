@@ -29,20 +29,20 @@ router.get("/users", (req, res) => {
 //get
 router.get("/user/:userid", (req, res) => {
     let results = models.getUser(req.params.userid);
-    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+    results.then(result => res.send("User inserted")).catch(error => res.end(error))
 
 });
 
 // mise à jour
 router.put("/user/:userid", (req, res) => {
     let results = models.updateUser(req.params.userid, req.body);
-    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+    results.then(result => res.send("User inserted")).catch(error => res.end(error))
 
 });
 // suppression
 router.delete("/user/:userid", (req, res) => {
     let results = models.deleteUser(req.params.userid);
-    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+    results.then(result => res.send("User inserted")).catch(error => res.end(error))
 
 });
 
@@ -89,7 +89,7 @@ router.get("/publication/:publicationid", (req, res) => {
 router.put("/publication/:publicationid", (req, res) => {
     let data = req.body;
     data.user_id = res.params.userid;
-    let results = models.updatePublication(data);
+    let results = models.updatePublication(publication_id, data);
     results.then(results => res.send(results));
 
 });
@@ -122,7 +122,7 @@ router.post("/publication/:publicationid/comments/media", (req, res) => {
 
 // list des commentaires
 router.get("/publication/:publicationid/comments", (req, res) => {
-    return models.getPublicationComments(req.body).then((result) => res.send(result)).catch(error => res.send(error))
+    return models.getPublicationComments(req.params.publicationid).then((result) => res.send(result)).catch(error => res.send(error))
 });
 
 // get
@@ -132,11 +132,11 @@ router.get("/comment/:commentid", (req, res) => {
 
 
 router.delete("/comment/:commentid", (req, res) => {
-    return models.getComment(req.params.commentid).then((result) => res.send(result)).catch(error => res.send(error))
+    return models.deleteComment(req.params.commentid).then((result) => res.send(result)).catch(error => res.send(error))
 });
 
 router.put("/comment/:commentid", (req, res) => {
-    return models.getComment(req.params.commentid, req.body).then((result) => res.send(result)).catch(error => res.send(error))
+    return models.updateComment(req.params.commentid, req.body).then((result) => res.send(result)).catch(error => res.send(error))
 });
 
 

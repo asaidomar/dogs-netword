@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6378c207-c195-400c-8669-337b5b94877e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/knexfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/knexfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.js" beforeDir="false" afterPath="$PROJECT_DIR$/models.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
     </list>
@@ -15,23 +12,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6155642">
+    <splitter split-orientation="horizontal" split-proportion="0.54692775">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/routes.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2040">
-                  <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+                <state relative-caret-position="566">
+                  <caret line="138" column="31" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/models.js">
+            <entry file="file://$PROJECT_DIR$/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="23" selection-start-line="23" selection-end-line="30" selection-end-column="3" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -39,11 +36,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/migrations/20190507134958_create_user.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="384">
-                  <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state>
+                  <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
@@ -51,8 +45,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/migrations/20190507140138_create_publication.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -72,8 +66,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/migrations/20190507140402_create_comment.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+                <state relative-caret-position="285">
+                  <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -90,11 +84,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/migrations/20190507140657_create_comment_pub_ref.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+                <state relative-caret-position="180">
+                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
@@ -108,15 +102,6 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -124,8 +109,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/models.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="566">
-                  <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
+                <state relative-caret-position="298">
+                  <caret line="130" column="33" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -142,6 +127,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>delete</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -154,14 +144,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/migrations/inittial.sql" />
         <option value="$PROJECT_DIR$/test.js" />
-        <option value="$PROJECT_DIR$/models.js" />
-        <option value="$PROJECT_DIR$/routes.js" />
         <option value="$PROJECT_DIR$/migrations/20190507140402_create_comment.js" />
         <option value="$PROJECT_DIR$/migrations/20190507140138_create_publication.js" />
         <option value="$PROJECT_DIR$/migrations/20190507134958_create_user.js" />
         <option value="$PROJECT_DIR$/knexfile.js" />
         <option value="$PROJECT_DIR$/migrations/20190507140455_create_user_pub_ref.js" />
         <option value="$PROJECT_DIR$/migrations/20190507140657_create_comment_pub_ref.js" />
+        <option value="$PROJECT_DIR$/routes.js" />
+        <option value="$PROJECT_DIR$/models.js" />
       </list>
     </option>
   </component>
@@ -266,24 +256,24 @@
       <updated>1556616228831</updated>
       <workItem from="1556616230042" duration="9983000" />
       <workItem from="1557211986485" duration="767000" />
-      <workItem from="1557227555706" duration="3709000" />
+      <workItem from="1557227555706" duration="5418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14459000" />
+    <option name="totallyTimeSpent" value="16168000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="960" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11965812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17582418" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5311778" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.531106" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995381" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -291,8 +281,8 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="TypeScript" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.73963135" />
+      <window_info anchor="bottom" id="TypeScript" order="10" weight="0.32949308" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.38824886" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -360,13 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -402,54 +385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/knex/types/knex.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
           <caret line="571" column="4" selection-start-line="571" selection-start-column="4" selection-end-line="571" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="23" selection-start-line="23" selection-end-line="30" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/20190507134958_create_user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/20190507140402_create_comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/migrations/20190507140138_create_publication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -469,8 +408,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/migrations/20190507140657_create_comment_pub_ref.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20190507140402_create_comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20190507134958_create_user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/migrations/20190507140138_create_publication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="138" column="31" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="130" column="33" selection-start-line="130" selection-start-column="33" selection-end-line="130" selection-end-column="33" />
         </state>
       </provider>
     </entry>
