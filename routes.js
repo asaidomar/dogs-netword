@@ -14,7 +14,9 @@ router.get("/", (req, res) => {res.send("Hello")});
 // creation
 router.post("/user/signup", (req, res) => {
     let result = models.createUser(req.body);
-    result.then(result => res.send("User inserted")).catch(error => res.end(error))
+    result
+        .then(result => res.send(result))
+        .catch(error => res.end(error))
 
 
 });
@@ -65,7 +67,7 @@ router.delete("/user/logout", (req, res) => {
 // creation
 router.post("/user/:userid/publications", (req, res) => {
     let data = req.body;
-    data.user_id = res.params.userid;
+    data.user_id = req.params.userid;
     let results = models.createPublication(data);
     results.then(results => res.send(results));
 
@@ -74,7 +76,7 @@ router.post("/user/:userid/publications", (req, res) => {
 // get users publication
 router.get("/user/:userid/publications", (req, res) => {
     let results = models.getUserPublications(req.params.userid);
-    result.then(results => res.send(results));
+    results.then(results => res.send(results));
 
 });
 
@@ -97,8 +99,7 @@ router.put("/publication/:publicationid", (req, res) => {
 //mise à jour
 router.put("/publication/:publicationid/media", (req, res) => {
     let data = req.body;
-    data.user_id = res.params.publicationid;
-    let results = models.addPublicationMedia(res.params.publicationid, data);
+    let results = models.addPublicationMedia(req.params.publicationid, data);
     results.then(results => res.send(results));
 
 });
@@ -112,7 +113,9 @@ router.delete("/publication/:publicationid", (req, res) => {
 /************************************* Section comment  ****************************************/
 // creation
 router.post("/publication/:publicationid/comments", (req, res) => {
-    return models.createComment(req.body).then((result) => res.send(result)).catch(error => res.send(error))
+    let data = req.body;
+    data.pub_id = req.params.publicationid;
+    return models.createComment(data).then((result) => res.send(result)).catch(error => res.send(error))
 });
 
 // ajout de media
@@ -138,9 +141,6 @@ router.delete("/comment/:commentid", (req, res) => {
 router.put("/comment/:commentid", (req, res) => {
     return models.updateComment(req.params.commentid, req.body).then((result) => res.send(result)).catch(error => res.send(error))
 });
-
-
-
 
 
 

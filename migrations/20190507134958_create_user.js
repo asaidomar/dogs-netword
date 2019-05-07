@@ -15,7 +15,7 @@ exports.up = function(knex, Promise) {
             t.increments("id").primary();
             t.string("prenom", 250);
             t.string("nom", 250);
-            t.string("email", 250);
+            t.string("email", 250).unique();
             t.string("tel", 250);
             t.string("mdp", 500);
             t.string("salt", 250);

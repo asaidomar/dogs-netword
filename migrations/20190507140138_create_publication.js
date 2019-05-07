@@ -12,7 +12,7 @@ exports.up = function(knex, Promise) {
         .createTable( 'publications', t =>{
             t.increments("id").primary();
             t.text("content");
-            t.dateTime("created_date");
+            t.dateTime("created_date").defaultTo(knex.fn.now());
         })
 
 };
